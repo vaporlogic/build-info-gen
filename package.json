@@ -1,0 +1,21 @@
+{
+  "name": "@vaporlogicgp/build-info-gen",
+  "version": "0.1.0",
+  "description": "Generates a build-info.json with git hash, branch, and timestamp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vaporlogic/build-info-gen.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node postinstall.js"
+  },
+  "keywords": [
+    "build",
+    "git",
+    "version",
+    "metadata"
+  ],
+  "author": "build-utils-oss",
+  "license": "MIT"
+}
