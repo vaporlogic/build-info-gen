@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 'use strict';
-// v0.1.0 — postinstall only, no JS API yet
+// v1.0.0 — same as 0.1.0 postinstall
 var cp   = require('child_process');
 var fs   = require('fs');
 var path = require('path');
@@ -15,6 +15,7 @@ var info = {
   gitHash:     exec('git rev-parse --short HEAD') || 'unknown',
   gitBranch:   exec('git rev-parse --abbrev-ref HEAD') || 'unknown',
   nodeVersion: process.version,
+  platform:    process.platform,
 };
 
 try {
